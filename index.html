@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Para Estudo</title>
+    <link rel="stylesheet" href="estilo.css">    
+    
+</head>
+
+<body>
+    <header id="cabeçalho" class="cabeçalho">       
+        <img id="logo" src="SVG/logo projeto (2).svg" > 
+        <h2>SITE DE DEMONSTRAÇÃO DE TABELAS E FORMULÁRIOS EM HTML</h2> 
+        <button class="botao">SOBRE O DEV</button>     
+    </header>
+    
+   
+    <nav id="nav" class="nav">  
+        
+        <div id="botoesLista" class="botoesNav">
+            <button class="botao">Lista Ordenada</button>
+            <button class="botao">Lista não ordenada</button>
+            <button class="botao">Tabela Simples</button>
+        </div>
+
+        <div id="botoesTabela" class="botoesNav">
+            
+            <button class="botao">Tabela elaborada</button>
+            <button class="botao">Tabela com rolspan</button>
+            <button class="botao">Tabela com colspan</button>
+        </div>
+        
+    </nav>
+
+    <main>
+        <div class="divisão-de-assuntos"></div>
+        <section>
+            <h3>Listas Ordenadas</h3>
+            <ol>
+                <li>primeiro item</li>
+                <li>segundo item</li>
+                <li>terceiro item</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Listas Não Ordenadas</h3>
+            <ul>
+                <li>primeiro item</li>
+                <li>segundo item</li>
+                <li>terceiro item</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 align="center">tabela simples</h1>
+            <table width="50%" align="center" border="1">
+                <tr>
+                    <th>nome</th>
+                    <th>documento</th>
+                    <th>data de nsacimento</th>
+                </tr>
+
+                <tr>
+                    <td>matheus</td>
+                    <td>123.456.789-10</td>
+                    <td>12/34/56</td>
+                </tr>
+                
+                <tr>
+                    <td>joao</td>
+                    <td>123.456.789-10</td>
+                    <td>12/34/56</td>
+                </tr>
+                <tr>
+                    <td>carla</td>
+                    <td>123.456.789-10</td>
+                    <td>12/34/56</td>
+                </tr>
+                <tr>
+                    <td>larissa</td>
+                    <td>123.456.789-10</td>
+                    <td>12/34/56</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 align="center">tabela mais elaborada em thead,tbody e tfoot</h3>
+            <table width="50%" align="center" border="1">
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>telefone</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>matheus</td>
+                        <td>(32)12345-6789</td>
+                        <td>usuario@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>larissa</td>
+                        <td>(32)12345-6789</td>
+                        <td>usuario@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>joao</td>
+                        <td>(32)12345-6789</td>
+                        <td>usuario@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>clara</td>
+                        <td>(32)12345-6789</td>
+                        <td>usuario@gmail.com</td>
+                    </tr>
+                    
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h3 align="center">tabela com rolspan</h3>
+            <table width="50%" border="1" align="center">
+                <tr>
+                    <th>aluno</th>
+                    <td>alex</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">disciplinas</th>
+                    <td>html</td>
+                </tr>
+                <tr>
+                    <td>Ambiente web</td>
+                </tr>
+
+            </table>
+        </section>
+        <section>
+            <h2 align="center">tabela com colspan</h2>
+            <table width="50%" border="1" align="center">
+                <tr>
+                    <th>aluno</th>
+                    <th colspan="2">disciplinas</th>
+                </tr>
+                <tr>
+                    <td>alex</td>
+                    <td>html</td>
+                    <td>ambiente web</td>
+                </tr>
+
+            </table>
+        </section>
+        <hr size="1" width="100%" color=" #485550" align="center">
+
+      <h2 align="center">FORMULARIO HTML</h2> 
+      <form action="/pagina=processa=dados=do=form" method="post">
+            <fieldset>
+                <legend>Dados Gerais</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" minlength="3" id="nome" placeholder="Matheus" />
+
+                <label for="data_nascimento">Data De Nascimento:</label>
+                <input type="text" id="data_nascimento" placeholder="00/00/00" />
+
+                <label for="cpf">cpf:</label>
+                <input type="cpf" mmaxlength="11" id="cpf" placeholder="123.456.789-10" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                
+                <label for="tipo_endereço"> Tipo</label>
+                <select id="tipo_endereço">
+                    <option value="">Selecione</option>
+                    <option value="rua">Rua</option>
+                    <option value="rodovia">Rodovia</option>
+                    <option value="estrada">Estrada</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <label for="logradouro_endereço">Logradouro</label>
+                <input type="text" id="logradouro_endereço" placeholder="Rua ..." />
+
+                <label for="numero_endereço">Numero</label>
+                <input type="text" id="numero_endereço" placeholder="000"/>
+
+                <label for="complemento_endereço"> Complemento</label>
+                <input type="complemento_endereço" id="complemento_endereço" placeholder="casa...apartamento...condominío...">
+            </fieldset>
+
+            <fieldset>
+                <legend>Fale conosco</legend>
+
+                <label for="msg">Mensagem</label>
+                <textarea id="msg" placeholder="Escreva aqui sua mensagem"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit"> Enviar sua mensagem</button>
+                <button type="reset">Limpar formulárioS</button>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <p class="paragrafo">Gostou do meu projeto? Gostaria de me contratar para um estágio ou para fazer um projeto juntos? É só mandar um wpp ou Email. </p>
+        <div class="rodapé">
+         <section>
+            <table>
+                <dl>
+                    <dt>
+                       EMAIL:
+                        <dd>zacanini2@gmail.com</dd>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>
+                       WHATSAPP:
+                        <dd>(32)99158-3850</dd>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>
+                       ADICIONAL:
+                        <dd>Site criado durante o curso de ADS, <br> com intuito de portifólio e demonstração de habilidades.</dd>
+                    </dt>
+                </dl>
+            </table>
+         </section>
+        </div>
+    </footer>
+
+
+</body>
+</html>
